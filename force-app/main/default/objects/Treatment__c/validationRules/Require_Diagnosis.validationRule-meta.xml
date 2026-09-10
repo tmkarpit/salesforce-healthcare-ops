@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Diagnosis</fullName>
+    <active>true</active>
+    <description>Ensures a diagnosis is entered before saving a treatment record</description>
+    <errorConditionFormula>ISBLANK(Diagnosis__c)</errorConditionFormula>
+    <errorDisplayField>Diagnosis__c</errorDisplayField>
+    <errorMessage>Diagnosis is required before saving a treatment record.</errorMessage>
+</ValidationRule>
